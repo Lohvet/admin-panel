@@ -1,0 +1,122 @@
+body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f6f9;
+    }
+
+    .sidebar {
+      height: 100vh;
+      width: 250px;
+      position: fixed;
+      background: #343a40;
+      color: #fff;
+      transition: all 0.3s;
+    }
+
+    .sidebar .nav-link {
+      color: #adb5bd;
+      padding: 15px 20px;
+      display: block;
+    }
+
+    .sidebar .nav-link:hover,
+    .sidebar .nav-link.active {
+      background: #495057;
+      color: #fff;
+    }
+
+    .main-content {
+      margin-left: 250px; /* Ensure it clears the sidebar */
+      padding: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .navbar {
+      background-color: #fff;
+      padding: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .card {
+      border: none;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card i {
+      font-size: 30px;
+    }
+
+    .section-title {
+      margin-top: 30px;
+      font-weight: 600;
+      font-size: 20px;
+    }
+
+    .animate-fade {
+      animation: fadeInUp 0.6s ease;
+    }
+    
+    #productSearch::placeholder {
+    font-style: italic;
+  }
+
+  .table th,
+  .table td {
+    vertical-align: middle;
+  }
+
+  #manageSection .card {
+    border-radius: 12px;
+  }
+
+  #manageSection .section-title {
+    font-weight: 600;
+  }
+  #manageSection {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+#manageSection .card {
+  max-width: 100%;
+}
+
+#manageSection .container-fluid {
+  max-width: 1100px;
+  margin-right: 0px;
+}
+
+
+    @keyframes fadeInUp {
+      0% {opacity: 0; transform: translateY(20px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }
+
+/* Responsive fix */
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+}
+
+/* Optional: adjust table to always stay within card */
+.table-responsive {
+  overflow-x: auto;
+}
+
+/* Section title styling */
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #343a40;
+}
