@@ -1,15 +1,3 @@
-<?php
-if (file_get_contents('function.php') == '') {
-	header('Location: '.'/install/');
-} 
-require_once('function.php');
-session_start();
-
-if (is_user()) {
-	redirect('home.php');
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
